@@ -1,0 +1,81 @@
+const number = Math.floor(Math.random() * 101)
+numm = number.toString()
+
+let num1 
+
+let num2 
+
+
+if (numm.length == 1)
+{
+    check2(numm)
+    console.log (numm,'=', num2)
+    return
+}
+else if (numm.length == 2)
+{
+    if (numm >= 10 && numm<20)
+    {
+       check3(numm) 
+       console.log (numm, '=', num1 )
+    }
+    else
+    {
+    check1 (numm[0])
+    check2(numm[1])
+        
+    console.log(numm, '=', num1, num2)
+    }
+}
+else 
+{
+    console.log(numm, '=', 'one hundred')
+}
+function check1(n1)
+{
+    switch(n1)
+    {
+        case '2' : num1 = 'Twenty'; break
+        case '3' : num1 = 'Thirty'; break
+        case '4' : num1 = 'Forty'; break
+        case '5' : num1 = 'Fifty'; break
+        case '6' : num1 = 'Sixty'; break
+        case '7' : num1 = 'Seventy'; break
+        case '8' : num1 = 'Eighty'; break
+        case '9' : num1 = 'Ninety'; break
+    }
+}
+
+function check2(n2)
+{
+    switch(n2)
+    {
+        case '0' : num2 = 'Zero'; break
+        case '1' : num2 = 'One'; break
+        case '2' : num2 = 'Two'; break
+        case '3' : num2 = 'Three'; break
+        case '4' : num2 = 'Four'; break
+        case '5' : num2 = 'Five'; break
+        case '6' : num2 = 'Six'; break
+        case '7' : num2 = 'Seven'; break
+        case '8' : num2 = 'Eight'; break
+        case '9' : num2 = 'Nine'; break
+    }
+}
+
+function check3(n3)
+{
+    switch(n3)
+    {
+        case '10' : num1 = 'Ten'; break
+        case '11' : num1 = 'Eleven'; break
+        case '12' : num1 = 'Twelve'; break
+        case '13' : num1 = 'Thirteen'; break
+        case '14' : num1 = 'Fourteen'; break
+        case '15' : num1 = 'Fifteen'; break
+        case '16' : num1 = 'Sixteen'; break
+        case '17' : num1 = 'Seventeen'; break
+        case '18' : num1 = 'Eighteen'; break
+        case '19' : num1 = 'Nineteen'; break
+    }
+}
